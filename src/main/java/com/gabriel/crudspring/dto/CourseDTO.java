@@ -19,5 +19,4 @@ public record CourseDTO(
         @Length(max = 10)
         @Pattern(regexp = "Back-end|Front-end")
         String category) {
-
 }
