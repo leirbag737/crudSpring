@@ -1,5 +1,6 @@
 package com.gabriel.crudspring;
 
+import com.gabriel.crudspring.enums.Category;
 import com.gabriel.crudspring.model.Course;
 import com.gabriel.crudspring.repository.CourseRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -20,7 +21,7 @@ public class CrudSpringApplication {
 			courseRepository.deleteAll();
 			Course c1 = new Course();
 			c1.setName("Angular com Spring");
-			c1.setCategory("Front-end");
+			c1.setCategory(Category.FRONT_END);
 			courseRepository.save(c1);
 		};
 	}
