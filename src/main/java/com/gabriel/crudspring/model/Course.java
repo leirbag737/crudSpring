@@ -44,6 +44,5 @@ public class Course {
     private Status status = Status.ACTIVE;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "course")
-
     private List<Lesson> lessons = new ArrayList<>();
 }
