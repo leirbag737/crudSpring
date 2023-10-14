@@ -36,9 +36,6 @@ public class CrudSpringApplication {
 			l1.setCourse(c1);
 			c1.getLessons().add(l1);
 
-
-
-
 			courseRepository.save(c1);
 		};
 	}
